@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-flow: column nowrap;
+  padding: 1rem;
+  min-height: 100dvh;
+  background: -webkit-linear-gradient(top, hsla(235, 100%, 86%, 1), hsla(127, 100%, 86%, 1));
+  background: linear-gradient(top, hsla(235, 100%, 86%, 1), hsla(71, 100%, 86%, 1));
+}
+
+.container {
+  background: hsl(290, 100%, 94%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  padding: 2rem;
+  max-width: 40rem;
+  min-width: 5rem;
+  border-radius: 2rem;
+  box-shadow: 2px 5px 7px hsl(0, 0%, 0%);
+}
+
+.guess-number-input,
+.guess-number-lable {
+  margin: 1rem 0;
+  display: inline-block;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+
+}
+
+.guess-number-input {
+  margin-bottom: 0;
+  padding: 0.5rem;
+  font-size: 1rem;
+  box-shadow: 2px 3px 9px hsl(0, 0%, 0%);
+  color: rgb(4, 1, 7);
+  background: -webkit-linear-gradient(right, hsl(300, 83%, 95%), rgb(150, 147, 155));
+
+  background: linear-gradient(right, hsl(300, 83%, 95%), rgb(150, 147, 155));
+  border: none;
+}
+
+.guess-number-input:focus {
+  outline: 2px solid green;
+  border: none;
+  box-shadow: 3px 5px 9px hsl(0, 0%, 0%);
+  background: -webkit-linear-gradient(left, rgb(201, 250, 233), rgb(235, 235, 141));
+
+}
+
+.guessBtn {
+  padding: 0.5rem;
+  font-size: 1.3rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  border: none;
+  margin-bottom: 1rem;
+  margin-top: 0;
+  box-shadow: 2px 2px 8px black;
+  background: -webkit-linear-gradient(left, rgb(184, 243, 184), hsl(240, 50%, 71%), rgb(235, 235, 137));
+  background: linear-gradient(left, rgb(3, 99, 3), hsl(240, 70%, 48%), hsl(60, 85%, 51%));
+  color: hsl(0, 100%, 30%);
+}
+
+.guessBtn:hover {
+  color: hsl(0, 0%, 0%);
+  background: -webkit-linear-gradient(right, rgb(184, 243, 184), hsl(240, 50%, 71%), rgb(235, 235, 137));
+  background: linear-gradient(right, rgb(3, 99, 3), hsl(240, 70%, 48%), hsl(60, 85%, 51%));
+}
