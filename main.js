@@ -17,6 +17,8 @@ guessBtn.addEventListener("click", () => {
   if (isNaN(myGuess) || myGuess < minNum || myGuess > maxNum) {
     guessResult.textContent = `Please enter a valid number between ${minNum} and ${maxNum}.`;
     guessResult.style.color = "red";
+    guessResult.style.textAlign = "center";
+    guessResult.style.margin = "1rem 0";
     return;
   }
 
@@ -29,13 +31,18 @@ guessBtn.addEventListener("click", () => {
     guessResult.style.color = "green";
     guessResult.style.textAlign = "center";
     guessResult.style.margin = "0 auto";
+    guessResult.style.margin = "1rem 0";
 
   } else if (myGuess < computerGuess) {
     guessResult.textContent = `Your guess is too low, Try again!`;
     guessResult.style.color = "blue";
+    guessResult.style.textAlign = "center";
+    guessResult.style.margin = "1rem 0";
   } else {
     guessResult.textContent = `Your guess is too high, Try again!`;
     guessResult.style.color = "orange";
+    guessResult.style.textAlign = "center";
+    guessResult.style.margin = "1rem 0";
   }
 
   refreshGeuss.style.margin = "0";
@@ -53,6 +60,5 @@ refreshGeuss.addEventListener("click", () => {
   guessNumber.value = "";
   refreshGeuss.style.margin = "2rem";
   console.log(computerGuess);
-
 
 })
