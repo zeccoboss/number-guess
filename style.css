@@ -17,7 +17,8 @@ body {
 }
 
 .container {
-  background: hsl(290, 100%, 94%);
+  position: relative;
+  /*background: hsl(290, 100%, 94%);*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,6 +28,9 @@ body {
   min-width: 5rem;
   border-radius: 2rem;
   box-shadow: 2px 5px 7px hsl(0, 0%, 0%);
+  background: -webkit-linear-gradient(right, hsla(235, 100%, 86%, 1), hsla(127, 100%, 86%, 1));
+  background: linear-gradient(right, hsla(235, 100%, 86%, 1), hsla(71, 100%, 86%, 1));
+  color: hsla(248, 68%, 27%, 1);
 }
 
 .guess-number-input,
@@ -35,7 +39,10 @@ body {
   display: inline-block;
   font-size: 1.5rem;
   border-radius: 0.5rem;
+}
 
+.guess-number-lable {
+  font-weight: bold;
 }
 
 .guess-number-input {
@@ -55,7 +62,6 @@ body {
   border: none;
   box-shadow: 3px 5px 9px hsl(0, 0%, 0%);
   background: -webkit-linear-gradient(left, rgb(201, 250, 233), rgb(235, 235, 141));
-
 }
 
 .guessBtn {
@@ -67,8 +73,8 @@ body {
   margin-bottom: 1rem;
   margin-top: 0;
   box-shadow: 2px 2px 8px black;
-  background: -webkit-linear-gradient(left, rgb(184, 243, 184), hsl(240, 50%, 71%), rgb(235, 235, 137));
-  background: linear-gradient(left, rgb(3, 99, 3), hsl(240, 70%, 48%), hsl(60, 85%, 51%));
+  background: -webkit-linear-gradient(top, rgb(184, 243, 184), hsl(240, 50%, 71%), rgb(235, 235, 137));
+  background: linear-gradient(top, rgb(3, 99, 3), hsl(240, 70%, 48%), hsl(60, 85%, 51%));
   color: hsl(0, 100%, 30%);
 }
 
@@ -77,3 +83,38 @@ body {
   background: -webkit-linear-gradient(right, rgb(184, 243, 184), hsl(240, 50%, 71%), rgb(235, 235, 137));
   background: linear-gradient(right, rgb(3, 99, 3), hsl(240, 70%, 48%), hsl(60, 85%, 51%));
 }
+
+.guessBtn:active{
+    transform: scale(1.3);
+    box-shadow: 2px 3px 5px hsla(0, 0%, 100%, 1);
+}
+
+.my-name {
+  position: absolute;
+  left: 1.5rem;
+  bottom: 1rem;
+  background: -webkit-linear-gradient(right, hsla(220, 78%, 89%, 1), hsla(360, 89%, 88%, 1)), hsla(161, 100%, 81%, 1);
+  background: gradient(right, hsla(220, 78%, 89%, 1), hsla(360, 89%, 88%, 1)), hsla(161, 100%, 81%, 1);
+  padding: 0.2rem;
+  color: hsla(0, 95%, 12%, 1);
+  border-radius: 0.3rem;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 2px 4px 6px hsla(335, 79%, 23%, 1);
+  font-family: fantasy;
+}
+
+.my-name:hover {
+  color: hsla(0, 0%, 0%, 1);
+  background: -webkit-linear-gradient(right, hsla(220, 54%, 80%, 1), hsla(360, 56%, 77%, 1)), hsla(158, 44%, 80%, 1);
+  background: linear-gradient(right, hsla(220, 54%, 80%, 1), hsla(360, 56%, 77%, 1)), hsla(158, 44%, 80%, 1);
+  box-shadow: 2px 4px 6px hsla(335, 2%, 34%, 1);
+}
+
+.my-name:active {
+  transform: scale(2);
+  color: hsla(0, 0%, 100%, 1);
+  background: -webkit-linear-gradient(bottom, hsla(98, 54%, 80%, 1), hsla(0, 56%, 77%, 1)), hsla(64, 44%, 80%, 1);
+    background: linear-gradient(bottom, hsla(98, 54%, 80%, 1), hsla(0, 56%, 77%, 1)), hsla(64, 44%, 80%, 1);
+
+  }
