@@ -37,7 +37,6 @@ body {
 .guess-number-lable {
   margin: 1rem 0;
   display: inline-block;
-  font-size: 1.5rem;
   border-radius: 0.5rem;
 }
 
@@ -48,7 +47,6 @@ body {
 .guess-number-input {
   margin-bottom: 0;
   padding: 0.5rem;
-  font-size: 1rem;
   box-shadow: 2px 3px 9px hsl(0, 0%, 0%);
   color: rgb(4, 1, 7);
   background: -webkit-linear-gradient(right, hsl(300, 83%, 95%), rgb(150, 147, 155));
@@ -66,7 +64,6 @@ body {
 
 .guessBtn {
   padding: 0.5rem;
-  font-size: 1.3rem;
   border-radius: 0.5rem;
   cursor: pointer;
   border: none;
@@ -117,4 +114,4 @@ body {
   background: -webkit-linear-gradient(bottom, hsla(98, 54%, 80%, 1), hsla(0, 56%, 77%, 1)), hsla(64, 44%, 80%, 1);
     background: linear-gradient(bottom, hsla(98, 54%, 80%, 1), hsla(0, 56%, 77%, 1)), hsla(64, 44%, 80%, 1);
 
-  }
+                                                                            }
